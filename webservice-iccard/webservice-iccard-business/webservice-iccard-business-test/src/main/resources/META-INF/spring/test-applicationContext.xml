@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+    <jaxws:endpoint id="helloService" implementor="org.whut.webservice.iccard.business.test.service.HelloService" address="/HelloWorld">
+        <jaxws:inInterceptors>
+            <ref bean="wSS4JInInterceptor"/>
+        </jaxws:inInterceptors>
+    </jaxws:endpoint>
+
+    <jaxws:endpoint id="loginService" implementor="org.whut.webservice.iccard.business.test.service.LoginService" address="/Login">
+        <jaxws:inInterceptors>
+            <ref bean="wSS4JInInterceptor"/>
+        </jaxws:inInterceptors>
+    </jaxws:endpoint>
+</beans>
