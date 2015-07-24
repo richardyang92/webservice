@@ -32,5 +32,4 @@
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 
-    <import resource="security-applicationContext.xml"/>
 </beans>

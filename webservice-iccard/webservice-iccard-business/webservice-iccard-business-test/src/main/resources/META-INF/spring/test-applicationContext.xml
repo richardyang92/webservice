@@ -9,10 +9,4 @@
             <ref bean="wSS4JInInterceptor"/>
         </jaxws:inInterceptors>
     </jaxws:endpoint>
-
-    <jaxws:endpoint id="loginService" implementor="org.whut.webservice.iccard.business.test.service.LoginService" address="/Login">
-        <jaxws:inInterceptors>
-            <ref bean="wSS4JInInterceptor"/>
-        </jaxws:inInterceptors>
-    </jaxws:endpoint>
 </beans>

@@ -17,7 +17,6 @@
         <module>webservice-common-orm</module>
         <module>webservice-common-authentication</module>
         <module>webservice-common-util</module>
-        <module>webservice-common-security</module>
     </modules>
 
     <dependencies>
